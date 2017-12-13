@@ -1,3 +1,4 @@
 # MaricarA line I wrote on my local computer
-tests
+This is a line from Rstudio
+
 
