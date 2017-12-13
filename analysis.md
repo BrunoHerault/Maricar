@@ -3,30 +3,36 @@ analysis
 Bruno Hérault
 12/13/2017
 
-R Markdown
-----------
+Question
+--------
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+from Maricar "*We are now finalizing the data analysis for the short article on water fluxes. Water Use Efficiency is the ratio of GPP and ET (evapotranspiration), and one of the analysis is to determine which is driving WUE best, is it the GPP or ET? To do this, I did the gam analysis under the mgcv package (please see the resulting table). It’s the one we used for the analysis in our previous paper for determining the best climate predictor for NEE, RE and GPP. However, Damien would like me to confirm to you whether is it alright to use this kind of analysis since ET and GPP are correlated. He wants to know if we are safe to use the result*"
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+**GAM is not appropriate to see what is the best driver of WUE given that it is te ratio of 2 other (obviously non-independent) variables**
 
-``` r
-summary(cars)
-```
+Data exploration
+----------------
 
-    ##      speed           dist       
-    ##  Min.   : 4.0   Min.   :  2.00  
-    ##  1st Qu.:12.0   1st Qu.: 26.00  
-    ##  Median :15.0   Median : 36.00  
-    ##  Mean   :15.4   Mean   : 42.98  
-    ##  3rd Qu.:19.0   3rd Qu.: 56.00  
-    ##  Max.   :25.0   Max.   :120.00
+*File Name: **daily14.csv** *
 
-Including Plots
----------------
+### ET trends in time
+
+![](analysis_files/figure-markdown_github/unnamed-chunk-2-1.png)
+
+### GPP trends in time
+
+![](analysis_files/figure-markdown_github/unnamed-chunk-3-1.png)
+
+### WUE trends in time
+
+![](analysis_files/figure-markdown_github/unnamed-chunk-4-1.png)
+
+problem with ratio \#\# Including Plots
 
 You can also embed plots, for example:
 
-![](analysis_files/figure-markdown_github/pressure-1.png)
+``` r
+plot(pressure)
+```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+![](analysis_files/figure-markdown_github/pressure-1.png)
