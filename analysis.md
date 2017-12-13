@@ -6,6 +6,7 @@ Bruno Hérault
 -   [Question](#question)
 -   [Data exploration](#data-exploration)
     -   [Trends in time](#trends-in-time)
+    -   [Correlation Plots](#correlation-plots)
 -   [Variance partitioning](#variance-partitioning)
     -   [Preliminary assessments](#preliminary-assessments)
     -   [Variance Propagation](#variance-propagation)
@@ -33,6 +34,13 @@ Trends in time
 --------------
 
 ![](analysis_files/figure-markdown_github/unnamed-chunk-2-1.png)![](analysis_files/figure-markdown_github/unnamed-chunk-2-2.png)![](analysis_files/figure-markdown_github/unnamed-chunk-2-3.png)
+
+Correlation Plots
+-----------------
+
+![](analysis_files/figure-markdown_github/unnamed-chunk-3-1.png)
+
+Partial correlation per season (LD, LR, LW, SW)
 
 Variance partitioning
 =====================
@@ -67,17 +75,17 @@ RES11
 
     ## Results from error propagation:
     ##    Mean.1    Mean.2      sd.1      sd.2      2.5%     97.5% 
-    ## 2.5107806 2.6155655 0.5290829 0.5569026 1.5314759 3.7129201 
+    ## 2.5107806 2.6155655 0.5290829 0.5569026 1.5171001 3.7157010 
     ## 
     ## Results from Monte Carlo simulation:
     ##      Mean        sd    Median       MAD      2.5%     97.5% 
-    ## 2.6459314 2.0828169 2.5118253 0.5244595 1.7310325 4.3827996
+    ## 2.6516448 2.0190171 2.5104820 0.5261077 1.7315251 4.3770877
 
 ``` r
 plot(RES11)
 ```
 
-![](analysis_files/figure-markdown_github/unnamed-chunk-4-1.png)
+![](analysis_files/figure-markdown_github/unnamed-chunk-5-1.png)
 
 Propagation partitioning
 ------------------------
@@ -86,7 +94,7 @@ Propagation partitioning
 contribution(RES11)
 ```
 
-![](analysis_files/figure-markdown_github/unnamed-chunk-5-1.png)
+![](analysis_files/figure-markdown_github/unnamed-chunk-6-1.png)
 
     ##       GPP        ET 
     ## 0.3964361 0.6035639
