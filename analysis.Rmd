@@ -2,7 +2,7 @@
 title: "analysis"
 author: "Bruno Hérault"
 date: "12/13/2017"
-output: html_document
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
